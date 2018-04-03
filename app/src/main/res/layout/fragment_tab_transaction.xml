@@ -1,0 +1,342 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.f_apps.tab_transaction"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/layer_atas"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#424242">
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="20sp"
+            android:textColor="#9E9E9E"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/hi_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi Satrio!"
+            android:textSize="25sp"
+            android:layout_below="@+id/tanggal"
+            android:layout_marginLeft="20dp"
+            android:textColor="#827717"/>
+        <TextView
+            android:id="@+id/current_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Current Balance"
+            android:textColor="#9E9E9E"
+            android:layout_below="@+id/hi_username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_balance">
+            <TextView
+                android:id="@+id/uangnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="750.000,00"
+                android:textColor="#fff"
+                android:textSize="45sp"
+                android:layout_below="@+id/current_balance"
+                android:layout_centerHorizontal="true" />
+            <TextView
+                android:id="@+id/idr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR"
+                android:textSize="20sp"
+                android:textColor="#9E9E9E"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/uangnya"
+                android:layout_marginRight="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/transaction_layer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layer_atas"
+        android:background="#BDBDBD">
+
+        <ImageButton
+            android:id="@+id/transaction_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_kanan"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/transaction_history_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction History"
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/transaction_history"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/transaction_history"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/transaction_layer"
+        android:background="#BDBDBD">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/logo_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/ic_uang" />
+
+                    <TextView
+                        android:id="@+id/nama_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/logo_uang"
+                        android:text="Ayam Tulang Lunak Lumintu"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/jumlah_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_transaksi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/logo_uang"
+                        android:text="- IDR 15.000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/waktu_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="a few sec ago" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/t1">
+
+                    <TextView
+                        android:id="@+id/logo_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/ic_uang" />
+
+                    <TextView
+                        android:id="@+id/nama_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/logo_uang"
+                        android:text="Hanif Hutang IEWH"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/jumlah_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_transaksi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/logo_uang"
+                        android:text="- IDR 870.000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/waktu_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="a few sec ago" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/t3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/t2">
+
+                    <TextView
+                        android:id="@+id/logo_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/ic_uang" />
+
+                    <TextView
+                        android:id="@+id/nama_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/logo_uang"
+                        android:text="Ayam Tulang Lunak Lumintu"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/jumlah_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_transaksi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/logo_uang"
+                        android:text="- IDR 15.000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/waktu_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="a few sec ago" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/t3">
+
+                    <TextView
+                        android:id="@+id/logo_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/ic_uang" />
+
+                    <TextView
+                        android:id="@+id/nama_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/logo_uang"
+                        android:text="Ayam Tulang Lunak Lumintu"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/jumlah_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_transaksi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/logo_uang"
+                        android:text="- IDR 15.000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/waktu_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="a few sec ago" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/t5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/t4">
+
+                    <TextView
+                        android:id="@+id/logo_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="0dp"
+                        android:background="@drawable/ic_uang" />
+
+                    <TextView
+                        android:id="@+id/nama_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@+id/logo_uang"
+                        android:text="Ayam Tulang Lunak Lumintu"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/jumlah_uang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/nama_transaksi"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/logo_uang"
+                        android:text="- IDR 15.000"
+                        android:textSize="30dp" />
+
+                    <TextView
+                        android:id="@+id/waktu_transaksi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="a few sec ago" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_plus"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+
+</RelativeLayout>
