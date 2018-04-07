@@ -24,18 +24,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:shadowColor="#000"
-        android:shadowRadius="10dp"
         android:text="Edit Foto"
         android:textColor="#4FC3F7" />
 
     <RelativeLayout
         android:id="@+id/layer_setting"
-        android:layout_width="500dp"
-        android:layout_height="400dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/edit_foto"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="30dp">
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp">
 
 
         <RelativeLayout
@@ -85,7 +83,7 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="13dp"
                 android:src="@drawable/ic_uang" />
 
             <TextView
@@ -137,12 +135,12 @@
             android:layout_below="@+id/layer_setting1">
 
             <ImageButton
-                android:id="@+id/setting_3"
+                android:id="@+id/setting_4"
                 android:layout_width="100dp"
                 android:layout_height="100dp"/>
 
             <ImageView
-                android:id="@+id/setting_display"
+                android:id="@+id/setting_notif"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
@@ -152,7 +150,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/setting_display"
+                android:layout_below="@+id/setting_notif"
                 android:layout_centerHorizontal="true"
                 android:text="Notification"
                 android:textColor="#000" />
@@ -168,12 +166,12 @@
             android:layout_toRightOf="@+id/layer_setting4">
 
             <ImageButton
-                android:id="@+id/setting_3"
+                android:id="@+id/setting_5"
                 android:layout_width="100dp"
                 android:layout_height="100dp" />
 
             <ImageView
-                android:id="@+id/setting_display"
+                android:id="@+id/setting_about"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
@@ -183,7 +181,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/setting_display"
+                android:layout_below="@+id/setting_about"
                 android:layout_centerHorizontal="true"
                 android:text="About"
                 android:textColor="#000" />
@@ -200,12 +198,12 @@
             android:layout_toRightOf="@+id/layer_setting5">
 
             <ImageButton
-                android:id="@+id/setting_3"
+                android:id="@+id/setting_6"
                 android:layout_width="100dp"
                 android:layout_height="100dp" />
 
             <ImageView
-                android:id="@+id/setting_display"
+                android:id="@+id/setting_logout"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_centerHorizontal="true"
@@ -215,7 +213,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/setting_display"
+                android:layout_below="@+id/setting_logout"
                 android:layout_centerHorizontal="true"
                 android:text="Logout"
                 android:textColor="#000" />
