@@ -21,7 +21,8 @@
         <activity android:name=".add_transaction" />
         <activity android:name=".setting_about" />
         <activity android:name=".setting_add_budget" />
-        <activity android:name=".setting_edit_budget"></activity>
+        <activity android:name=".setting_edit_budget" />
+        <activity android:name=".setting_display"></activity>
     </application>
 
 </manifest>
