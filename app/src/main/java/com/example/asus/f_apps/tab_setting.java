@@ -1,12 +1,16 @@
 package com.example.asus.f_apps;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 
 /**
@@ -29,9 +33,6 @@ public class tab_setting extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public tab_setting() {
-        // Required empty public constructor
-    }
 
     /**
      * Use this factory method to create a new instance of
@@ -64,7 +65,74 @@ public class tab_setting extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tab_setting, container, false);
+        View view = inflater.inflate(R.layout.fragment_tab_setting, container, false);
+
+        ImageButton setting_1 = (ImageButton) view.findViewById(R.id.setting_1);
+        setting_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),setting_edit_profil.class);
+//                in.putExtra("some", "some data");
+                startActivity(in);
+//                getActivity().startActivity(in);
+            }
+        });
+
+        ImageButton setting_2 = (ImageButton) view.findViewById(R.id.setting_2);
+        setting_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),setting_edit_budget.class);
+//                in.putExtra("some", "some data");
+//                getActivity().startActivity(in);
+                startActivity(in);
+            }
+        });
+
+        ImageButton setting_3 = (ImageButton) view.findViewById(R.id.setting_3);
+        setting_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),setting_display.class);
+//                in.putExtra("some", "some data");
+//                getActivity().startActivity(in);
+                startActivity(in);
+            }
+        });
+
+        ImageButton setting_4 = (ImageButton) view.findViewById(R.id.setting_4);
+        setting_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),setting_notification.class);
+//                in.putExtra("some", "some data");
+//                getActivity().startActivity(in);
+                startActivity(in);
+            }
+        });
+
+        ImageButton setting_5 = (ImageButton) view.findViewById(R.id.setting_5);
+        setting_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),setting_about.class);
+//                in.putExtra("some", "some data");
+//                getActivity().startActivity(in);
+                startActivity(in);
+            }
+        });
+
+        ImageButton setting_6 = (ImageButton) view.findViewById(R.id.setting_6);
+        setting_6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(),Login.class);
+
+                startActivity(in);
+            }
+        });
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

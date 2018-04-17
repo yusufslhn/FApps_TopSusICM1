@@ -5,8 +5,8 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
-        android:layout_width="270dp"
-        android:layout_height="500dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/rounded_add_transaction">
@@ -17,16 +17,17 @@
             android:text="Ammount"
             android:textColor="#000"
             android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"/>
         <EditText
             android:id="@+id/add_ammount"
-            android:layout_width="180dp"
+            android:layout_width="240dp"
             android:layout_height="30dp"
             android:layout_below="@id/ammount"
             android:layout_marginTop="5dp"
             android:layout_centerInParent="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="30dp"
+            android:layout_marginRight="35dp"
             android:textAlignment="center"
             android:background="@drawable/rounded_abuabu"
             android:inputType="number" />
@@ -50,7 +51,7 @@
             android:layout_marginLeft="30dp"/>
         <Spinner
             android:id="@+id/spinner_categories"
-            android:layout_width="220dp"
+            android:layout_width="290dp"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/categories"
@@ -69,7 +70,7 @@
             android:layout_marginLeft="30dp"/>
         <Spinner
             android:id="@+id/spinner_payment_method"
-            android:layout_width="220dp"
+            android:layout_width="290dp"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
             android:layout_below="@id/payment_method"
@@ -85,19 +86,22 @@
             android:layout_below="@id/spinner_payment_method"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"/>
+
         <EditText
             android:id="@+id/add_notes"
-            android:layout_width="220dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/notes"
-            android:layout_marginTop="5dp"
-            android:layout_centerInParent="true"
-            android:textAlignment="center"
+            android:layout_width="290dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/spinner_payment_method"
+            android:layout_alignStart="@+id/spinner_payment_method"
+            android:layout_below="@+id/notes"
             android:background="@drawable/rounded_abuabu"
-            android:inputType="text"/>
+            android:inputType="textMultiLine"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="10dp" />
 
         <Button
-            android:layout_width="220dp"
+            android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:layout_below="@+id/add_notes"

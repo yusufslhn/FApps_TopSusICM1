@@ -10,6 +10,7 @@
         <item>Pacaran</item>
         <item>Keperluan Kuliah</item>
     </string-array>
+
     <string-array name="payment_method">
         <item>Cash</item>
         <item>Credit</item>

@@ -16,13 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".signup" />
         <activity android:name=".Login" />
-        <activity android:name=".add_transaction" />
         <activity android:name=".setting_about" />
+        <activity android:name=".add_transaction" />
+        <activity android:name=".signup" />
         <activity android:name=".setting_add_budget" />
         <activity android:name=".setting_edit_budget" />
-        <activity android:name=".setting_display"></activity>
+        <activity android:name=".setting_display" />
+        <activity android:name=".setting_edit_profil" />
+        <activity android:name=".setting_notification"></activity>
     </application>
 
 </manifest>
