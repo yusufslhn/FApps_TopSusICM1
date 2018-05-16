@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.asus.f_apps">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo_satrio"
@@ -9,14 +11,17 @@
         android:roundIcon="@mipmap/ic_logo_satrio_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".tab_main">
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login" />
+        <activity
+            android:name=".tab_main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
         <activity android:name=".setting_about" />
         <activity android:name=".add_transaction" />
         <activity android:name=".signup" />
@@ -24,7 +29,13 @@
         <activity android:name=".setting_edit_budget" />
         <activity android:name=".setting_display" />
         <activity android:name=".setting_edit_profil" />
-        <activity android:name=".setting_notification"></activity>
+        <activity android:name=".setting_notification" />
+        <activity android:name=".budget_income" />
+        <activity android:name=".budget_outcome" />
+        <activity android:name=".Login" />
+        <activity android:name=".cardview_transaction" />
+        <activity android:name=".update_delete_transaksi" />
+        <activity android:name=".cardview_income"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.f_apps.setting_about"
+    android:background="#E0E0E0">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#BDBDBD"
+        android:id="@+id/tab_about">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textColor="#000"
+                android:textSize="25dp"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab_about"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_centerHorizontal="true">
+        
+        <TextView
+            android:id="@+id/text_about1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Developed by:"
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_about2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_about1"
+            android:layout_marginTop="50dp"
+            android:text="Mochamad Yusuf Solihin"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/text_about3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nindia Cahyaning Putri"
+            android:textColor="#000"
+            android:layout_below="@id/text_about2"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/text_about4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Septian Hanifan Arif Gunawan"
+            android:textColor="#000"
+            android:layout_below="@id/text_about3"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/text_about5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Faculty of Informatics Engineering"
+            android:textColor="#000"
+            android:layout_below="@id/text_about4"
+            android:layout_marginTop="250dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text_about6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Multimedia Laboratory"
+            android:textColor="#000"
+            android:layout_below="@id/text_about5"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -2,7 +2,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/hah">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -40,50 +41,50 @@
             android:layout_below="@id/ammount"
             android:textColor="#000"/>
 
-        <TextView
-            android:id="@+id/categories"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Categories"
-            android:textColor="#000"
-            android:layout_below="@id/add_ammount"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"/>
-        <Spinner
-            android:id="@+id/spinner_categories"
-            android:layout_width="290dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@id/categories"
-            android:layout_centerInParent="true"
-            android:spinnerMode="dropdown">
-        </Spinner>
+        <!--<TextView-->
+            <!--android:id="@+id/categories"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Categories"-->
+            <!--android:textColor="#000"-->
+            <!--android:layout_below="@id/add_ammount"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
+        <!--<Spinner-->
+            <!--android:id="@+id/spinner_categories"-->
+            <!--android:layout_width="290dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_below="@id/categories"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:spinnerMode="dropdown">-->
+        <!--</Spinner>-->
 
-        <TextView
-            android:id="@+id/payment_method"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Payment Method"
-            android:textColor="#000"
-            android:layout_below="@id/spinner_categories"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"/>
-        <Spinner
-            android:id="@+id/spinner_payment_method"
-            android:layout_width="290dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="10dp"
-            android:layout_below="@id/payment_method"
-            android:layout_centerInParent="true"
-            android:spinnerMode="dropdown">
-        </Spinner>
+        <!--<TextView-->
+            <!--android:id="@+id/payment_method"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Payment Method"-->
+            <!--android:textColor="#000"-->
+            <!--android:layout_below="@id/spinner_categories"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_marginLeft="30dp"/>-->
+        <!--<Spinner-->
+            <!--android:id="@+id/spinner_payment_method"-->
+            <!--android:layout_width="290dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_below="@id/payment_method"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:spinnerMode="dropdown">-->
+        <!--</Spinner>-->
         <TextView
             android:id="@+id/notes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Notes"
             android:textColor="#000"
-            android:layout_below="@id/spinner_payment_method"
+            android:layout_below="@id/add_ammount"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"/>
 
@@ -91,8 +92,8 @@
             android:id="@+id/add_notes"
             android:layout_width="290dp"
             android:layout_height="100dp"
-            android:layout_alignLeft="@+id/spinner_payment_method"
-            android:layout_alignStart="@+id/spinner_payment_method"
+            android:layout_alignLeft="@id/add_ammount"
+            android:layout_alignStart="@+id/ammount"
             android:layout_below="@+id/notes"
             android:background="@drawable/rounded_abuabu"
             android:inputType="textMultiLine"
@@ -101,11 +102,12 @@
             android:layout_marginTop="10dp" />
 
         <Button
+            android:id="@+id/submit"
             android:layout_width="290dp"
             android:layout_height="50dp"
             android:layout_centerInParent="true"
             android:layout_below="@+id/add_notes"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="200dp"
             android:background="@drawable/rounded_shape"
             android:text="Submit"
             android:textColor="#000"/>
